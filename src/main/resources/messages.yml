@@ -1,0 +1,34 @@
+# AntiSeedCracker Messages
+
+prefix: "&8[&6AntiSeedCracker&8]&r"
+
+# General Messages
+no-permission: "&cYou don't have permission to use this command."
+player-only: "&cThis command can only be used by players."
+unknown-command: "&cUnknown subcommand. Use /asc help for help."
+
+# Command Messages
+reload-success: "&aConfiguration reloaded successfully!"
+reload-failed: "&cFailed to reload configuration. Check console for errors."
+
+info:
+  - "&8&m                                   "
+  - "&6&lAntiSeedCracker &7v${project.version}"
+  - "&7Author: &fwilcodwg"
+  - "&7Status: &a{status}"
+  - "&7Protected Worlds: &f{worlds}"
+  - "&8&m                                   "
+
+help:
+  - "&8&m                                   "
+  - "&6&lAntiSeedCracker Commands"
+  - "&e/asc reload &7- Reload configuration"
+  - "&e/asc info &7- Plugin information"
+  - "&e/asc help &7- Show this help"
+  - "&8&m                                   "
+
+# Protection Messages
+command-blocked: "&cThis command has been blocked for security reasons."
+seed-protection: "&cSeed information is protected on this server."
+debug-blocked: "&cDebug features that reveal seed data are disabled."
+locate-blocked: "&cLocation commands are disabled to protect the world seed."

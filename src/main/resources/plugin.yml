@@ -1,0 +1,22 @@
+name: AntiSeedCracker
+version: ${project.version}
+main: nl.dutchcoding.antiseedcracker.AntiSeedCracker
+api-version: '1.13'
+author: Dutchwilco
+website: dutchcoding.nl
+description: Prevents players from cracking the world seed
+
+commands:
+  antiseedcracker:
+    description: Main plugin command
+    aliases: [asc]
+    usage: /antiseedcracker <reload|info>
+    permission: antiseedcracker.admin
+
+permissions:
+  antiseedcracker.admin:
+    description: Access to admin commands
+    default: op
+  antiseedcracker.bypass:
+    description: Bypass seed protection
+    default: false

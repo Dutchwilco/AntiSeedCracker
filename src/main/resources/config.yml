@@ -1,0 +1,50 @@
+# AntiSeedCracker Configuration
+# Prevents players from obtaining the world seed
+
+# General Settings
+settings:
+  # Enable/disable the plugin
+  enabled: true
+  
+  # Check for updates on startup
+  check-updates: true
+  
+  # Debug mode (verbose logging)
+  debug: false
+
+# Protection Features
+protection:
+  # Block /seed command
+  block-seed-command: true
+  
+  # Block commands that might reveal seed information
+  block-debug-commands: true
+  
+  # Prevent F3 debug screen seed information
+  hide-debug-seed: true
+  
+  # Block biome locator commands that could help seed cracking
+  block-locatebiome: true
+  
+  # Block structure locator commands
+  block-locate: true
+  
+  # Prevent seed-related packets
+  block-seed-packets: true
+  
+  # Prevent players from using /execute to get seed
+  block-execute-seed: true
+
+# Commands to block (case-insensitive)
+blocked-commands:
+  - "seed"
+  - "minecraft:seed"
+  - "execute run seed"
+  - "locatebiome"
+  - "minecraft:locatebiome"
+
+# Worlds to protect (empty = all worlds)
+# Add world names to protect specific worlds only
+protected-worlds: []
+
+# Bypass permission: antiseedcracker.bypass
